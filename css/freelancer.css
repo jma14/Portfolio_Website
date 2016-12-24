@@ -444,7 +444,9 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
-.portfolio-modal .modal-content {
+
+/* Skills Section */
+.skills-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -454,17 +456,17 @@ fieldset[disabled] .btn-success.active {
   padding: 100px 0;
   text-align: center;
 }
-.portfolio-modal .modal-content h2 {
+.skills-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
 }
-.portfolio-modal .modal-content img {
+.skills-modal .modal-content img {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content .item-details {
+.skills-modal .modal-content .item-details {
   margin: 30px 0;
 }
-.portfolio-modal .close-modal {
+.skills-modal .close-modal {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -473,10 +475,10 @@ fieldset[disabled] .btn-success.active {
   right: 25px;
   cursor: pointer;
 }
-.portfolio-modal .close-modal:hover {
+.skills-modal .close-modal:hover {
   opacity: 0.3;
 }
-.portfolio-modal .close-modal .lr {
+.skills-modal .close-modal .lr {
   height: 75px;
   width: 1px;
   margin-left: 35px;
@@ -488,7 +490,7 @@ fieldset[disabled] .btn-success.active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-.portfolio-modal .close-modal .lr .rl {
+.skills-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
   background-color: #2C3E50;
@@ -499,7 +501,121 @@ fieldset[disabled] .btn-success.active {
   /* Safari and Chrome */
   z-index: 1052;
 }
-.portfolio-modal .modal-backdrop {
+.skills-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+
+
+#skills .skills-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#skills .skills-item .skills-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#skills .skills-item .skills-link .caption {
+  background: rgba(24, 188, 156, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#skills .skills-item .skills-link .caption:hover {
+  opacity: 1;
+}
+#skills .skills-item .skills-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#skills .skills-item .skills-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#skills .skills-item .skills-link .caption .caption-content h3,
+#skills .skills-item .skills-link .caption .caption-content h4 {
+  margin: 0;
+}
+#skills * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #skills .skills-item {
+    margin: 0 0 30px;
+  }
+}
+
+.skills-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.skills-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em;
+}
+.skills-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.skills-modal .modal-content .item-details {
+  margin: 30px 0;
+}
+.skills-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.skills-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.skills-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.skills-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.skills-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+.sql-icon {
+	background: black;
 }
